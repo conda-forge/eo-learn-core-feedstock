@@ -26,7 +26,8 @@ requirements:
     - python-dateutil
     - sentinelhub >=2.5.0
     - tqdm >=4.27
-
+    - fs
+    - fs-s3fs
 test:
   imports:
     - eolearn
