@@ -5,11 +5,13 @@ Home: https://github.com/sentinel-hub/eo-learn
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eo-learn-core-feedstock/blob/master/LICENSE.txt)
 
 Summary: Core Machine Learning Framework at Sinergise
 
+Development: https://github.com/sentinel-hub/eo-learn
 
+Documentation: https://eo-learn.readthedocs.io/en/latest/eolearn.core.html
 
 Current build status
 ====================
