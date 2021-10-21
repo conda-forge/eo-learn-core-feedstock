@@ -1,5 +1,5 @@
 {% set name = "eo-learn-core" %}
-{% set version = "0.9.2" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d2471f7539e173189298bd00a90b078af2b355d1cc955293b043d3fa14e478ce
+  sha256: 7d05dfff7eff409ec48d3ef56c785d68a0975e4cbc5ecc0633fe8a2b42f19fe0
 
 build:
   noarch: python
@@ -45,8 +45,3 @@ about:
 extra:
   recipe-maintainers:
     - mxr-conda
-    - mwilson8
-    - dcunn
-    - oblute
-    - rluria14
-    - benhuff
