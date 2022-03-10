@@ -1,5 +1,5 @@
 {% set name = "eo-learn-core" %}
-{% set version = "0.10.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -17,17 +17,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.7
   run:
-    - attrs >=18.2.0
-    - geopandas
-    - numpy >=1.16
-    - python >=3.5
-    - python-dateutil
-    - sentinelhub >=2.5.0
-    - tqdm >=4.27
+    - attrs >=19.2.0
+    - boto3
     - fs
     - fs-s3fs
+    - geopandas >=0.8.1
+    - numpy >=1.20.0
+    - python-dateutil
+    - sentinelhub >=3.4.4
+    - tqdm >=4.27
+
 test:
   imports:
     - eolearn
