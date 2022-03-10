@@ -10,7 +10,7 @@ source:
   sha256: 0e254aae1880520dffa8f09c04655efb03023a056d5c27c135895261ed345e08
 
 build:
-  noarch: python >=3.7
+  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,6 +19,7 @@ requirements:
     - pip
     - python >=3.7
   run:
+    - python >=3.7
     - attrs >=19.2.0
     - boto3
     - fs
