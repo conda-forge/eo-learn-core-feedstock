@@ -1,11 +1,11 @@
-About eo-learn-core
-===================
+About eo-learn-core-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eo-learn-core-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sentinel-hub/eo-learn
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eo-learn-core-feedstock/blob/main/LICENSE.txt)
 
 Summary: Core Machine Learning Framework at Sinergise
 
@@ -148,4 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@mxr-conda](https://github.com/mxr-conda/)
+* [@zigaluksic](https://github.com/zigaluksic/)
 
