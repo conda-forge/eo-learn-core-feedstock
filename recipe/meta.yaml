@@ -6,29 +6,31 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: e761ce6d53ac1b71628e791e0a886af838fb96d5c1d5f662e67ef485b42a1117
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
   run:
     - attrs >=18.2.0
     - geopandas
     - numpy >=1.16
-    - python >=3.5
+    - python >={{ python_min }}
     - python-dateutil
     - sentinelhub >=2.5.0
     - tqdm >=4.27
     - fs
     - fs-s3fs
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - eolearn
     - eolearn.core
